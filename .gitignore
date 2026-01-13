@@ -1,11 +1,2 @@
-# Ignore everything
-*
-
-# Whitelist specific directories
-!/.vscode/
-!/addons_enterprise/
-!/custom_addons/
-!/config/
-
-# Whitelist this file
-!.gitignore
+odoo/
+env/
