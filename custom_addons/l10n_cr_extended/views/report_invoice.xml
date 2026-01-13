@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document_inherit_l10n_cr_custom" inherit_id="account.report_invoice_document">
+        <xpath expr="//div[@id='informations']" position="inside">
+            <div class="col-auto mw-100 mb-2" t-if="o.electronic_number" name="electronic_number">
+                <strong>Electronic Number:</strong>
+                <p class="m-0" t-field="o.electronic_number"/>
+            </div>
+            <div class="col-auto mw-100 mb-2" t-if="o.electronic_consecutive" name="electronic_consecutive">
+                <strong>Electronic Consecutive:</strong>
+                <p class="m-0" t-field="o.electronic_consecutive"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>
