@@ -10,6 +10,10 @@
                 <strong>Electronic Consecutive:</strong>
                 <p class="m-0" t-field="o.electronic_consecutive"/>
             </div>
+            <div class="col-auto mw-100 mb-2" t-if="o.l10n_latam_document_type_id.name" name="document_type">
+                <strong>Tipo de Documento:</strong>
+                <p class="m-0" t-field="o.l10n_latam_document_type_id.name"/>
+            </div>
         </xpath>
     </template>
 </odoo>

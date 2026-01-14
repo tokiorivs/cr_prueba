@@ -12,6 +12,7 @@ This module inherits from l10n_cr to allow custom modifications for Costa Rica l
     'data': [
         'views/account_move_views.xml',
         'views/report_invoice.xml',
+        'data/l10n_latam_document_type_data.xml',
     ],
     'installable': True,
     'auto_install': False,

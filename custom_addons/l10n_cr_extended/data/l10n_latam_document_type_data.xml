@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model='l10n_latam.document.type' id='document_type_01'>
+            <field name='sequence'>10</field>
+            <field name='code'>01</field>
+            <field name='report_name'>Factura Electrónica</field>
+            <field name='name'>Factura Electrónica</field>
+            <field name='country_id' ref='base.cr'/>
+            <field name='doc_code_prefix'>FE</field>
+            <field name='internal_type'>invoice</field>
+        </record>
+        <record model='l10n_latam.document.type' id='document_type_02'>
+            <field name='sequence'>20</field>
+            <field name='code'>02</field>
+            <field name='report_name'>Nota de Débito Electrónica</field>
+            <field name='name'>Nota de Débito</field>
+            <field name='country_id' ref='base.cr'/>
+            <field name='doc_code_prefix'>ND</field>
+            <field name='internal_type'>debit_note</field>
+        </record>
+        <record model='l10n_latam.document.type' id='document_type_03'>
+            <field name='sequence'>30</field>
+            <field name='code'>03</field>
+            <field name='report_name'>Nota de Crédito Electrónica</field>
+            <field name='name'>Nota de Crédito</field>
+            <field name='country_id' ref='base.cr'/>
+            <field name='doc_code_prefix'>NC</field>
+            <field name='internal_type'>credit_note</field>
+        </record>
+        <record model='l10n_latam.document.type' id='document_type_04'>
+            <field name='sequence'>15</field>
+            <field name='code'>04</field>
+            <field name='report_name'>Tiquete Electrónico</field>
+            <field name='name'>Tiquete Electrónico</field>
+            <field name='country_id' ref='base.cr'/>
+            <field name='doc_code_prefix'>TE</field>
+            <field name='internal_type'>invoice</field>
+        </record>
+        <record model='l10n_latam.document.type' id='document_type_08'>
+            <field name='sequence'>40</field>
+            <field name='code'>08</field>
+            <field name='report_name'>Factura Electrónica de Compra</field>
+            <field name='name'>Factura de Compra (Simplificado)</field>
+            <field name='country_id' ref='base.cr'/>
+            <field name='doc_code_prefix'>FEC</field>
+            <field name='internal_type'>invoice</field>
+        </record>
+        <record model='l10n_latam.document.type' id='document_type_09'>
+            <field name='sequence'>50</field>
+            <field name='code'>09</field>
+            <field name='report_name'>Factura Electrónica de Exportación</field>
+            <field name='name'>Factura de Exportación</field>
+            <field name='country_id' ref='base.cr'/>
+            <field name='doc_code_prefix'>FEE</field>
+            <field name='internal_type'>invoice</field>
+        </record>
+</odoo>

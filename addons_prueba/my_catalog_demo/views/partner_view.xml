@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_inherit_demo" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.demo</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <!-- Buscamos el campo 'vat' (NIF) y lo ponemos justo debajo -->
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="quality_grade_id" widget="selection"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
